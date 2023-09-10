@@ -1,0 +1,30 @@
+﻿<Window x:Class="Simple_Wpf_App.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simple_Wpf_App"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Operaciones" Background="#448AFF" Foreground="White">
+                    <MenuItem Header="_Ingresos" Click="Ingresos_Click" Background="#448AFF" Foreground="White"/>
+                    <MenuItem Header="_Salida" Background="#448AFF" Foreground="White"/>
+                </MenuItem>
+                <MenuItem Header="_Mantenimientos" Background="#448AFF" Foreground="White">
+                    <MenuItem Header="_Conductores" Click="Conductores_Click" Background="#448AFF" Foreground="White"/>
+                    <MenuItem Header="_Transportistas" Background="#448AFF" Foreground="White"/>
+                    <MenuItem Header="_Camiones" Background="#448AFF" Foreground="White"/>
+                    <MenuItem Header="_Productos" Background="#448AFF" Foreground="White"/>
+                </MenuItem>
+                <MenuItem Header="_Reportes" Background="#448AFF" Foreground="White">
+                    <MenuItem Header="_Cargas" Background="#448AFF" Foreground="White"/>
+                    <MenuItem Header="_Ingresos" Click="ListaIngresos_Click" Background="#448AFF" Foreground="White"/>
+                    <MenuItem Header="_Salidas" Background="#448AFF" Foreground="White"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+    </Grid>
+</Window>
